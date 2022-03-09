@@ -3,6 +3,7 @@
 }
 .main-header{
     text-decoration:underline;
+    font-size: x-large;
 }
 
 .timer-input{
@@ -20,4 +21,11 @@ background-color: lightgray;
 
 button:active{
 
+}
+
+#clock{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    text-align: center;
+    font-size: large;
 }
