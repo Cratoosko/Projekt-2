@@ -7,20 +7,18 @@ function timeDisplay() {
     min = formatTimeDisplay(min)
     sec = formatTimeDisplay(sec)
     document.getElementById("clock").innerHTML = hour + ":" + min + ":" + sec;
+    var t = 
+    setTimeout(function(){ 
+    timeDisplay() }, 1000);
   }
-
-  var t = 
-  setTimeout(function(){ 
-  timeDisplay() }, 1000);
   
-  function formatTimeDisplay(s) {
-    if(s < 10) {
-      return "0" + s;
-    }
-    else {
-      return s;
-    }
+function formatTimeDisplay(s) {
+  if(s < 10) {
+    return "0" + s;
   }
+  else {
+    return s;
+  }
+}
   
   timeDisplay();
-  
