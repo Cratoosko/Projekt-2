@@ -1,3 +1,15 @@
+function dateDisplay() {
+  var currentDate = new Date();
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth();
+  var year = currentDate.getFullYear();
+  document.getElementById("date").innerHTML = year + "-" + (month+1) + "-" + day;
+  /*The month variable displays the month before for some reason so this is a short term fix*/
+  var t = 
+  setTimeout(function(){
+    dateDisplay() }, 1000);
+  }
+
 function timeDisplay() {
     var date = new Date();
     var hour = date.getHours();
@@ -22,3 +34,4 @@ function formatTimeDisplay(s) {
 }
   
   timeDisplay();
+  dateDisplay();
