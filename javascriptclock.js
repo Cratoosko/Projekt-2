@@ -49,7 +49,6 @@ function weekDisplay() {
   timeDisplay() }, 1000);
 }
 
-
   weekDisplay();
   timeDisplay();
   dateDisplay();
